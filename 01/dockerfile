@@ -1,0 +1,23 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && apt-get install -y python3.10 \
+    openjdk-8-jdk \
+    curl \ 
+    zip
+
+ENV HOME=/root
+
+RUN curl -sS https://get.sdkman.io | bash 
+
+ENV SDKMAN_DIR=/root/.sdkman
+ENV PATH="${SDKMAN_DIR}/bin:${PATH}"
+
+RUN bash -c "source $SDKMAN_DIR/bin/sdkman-init.sh && sdk install kotlin && sdk install gradle"
+
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+ENV PATH="$JAVA_HOME/bin:$HOME/.sdkman/candidates/gradle/current/bin:$PATH"
+
+WORKDIR /app
+COPY app /app
+
+CMD ["gradle", "run"]
