@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
     
-    implementation("org.xerial:sqlite-jdbc:3.36.0.3")
+    implementation("org.xerial:sqlite-jdbc:+")
     
     // Use JUnit Jupiter for testing.
     testImplementation(libs.junit.jupiter)
