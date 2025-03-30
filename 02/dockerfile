@@ -1,0 +1,26 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && apt-get install -y openjdk-11-jdk \
+    curl \
+    zip \
+    unzip \
+    bash
+
+ENV HOME=/root
+
+RUN curl -sS https://get.sdkman.io | bash && \
+    bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install sbt"
+
+ENV SDKMAN_DIR="/root/.sdkman"
+ENV PATH="${SDKMAN_DIR}/bin:${SDKMAN_DIR}/candidates/sbt/current/bin:${PATH}"
+
+ENV JAVA_HOME="/root/.sdkman/candidates/java/current"
+ENV PATH="${JAVA_HOME}/bin:${PATH}"
+
+WORKDIR /task_02
+COPY task_02 /task_02
+
+RUN sbt compile
+EXPOSE 9000
+
+CMD ["sbt", "run"]
