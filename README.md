@@ -89,3 +89,24 @@ kliencką na dockerze via docker-compose
 :white_check_mark: 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS
 
 Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/05)
+
+
+
+**Zadanie 6** Testy
+
+:white_check_mark: 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium
+(Kotlin, Python, Java, JS, Go, Scala)
+
+:white_check_mark: 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50
+asercji
+
+:white_check_mark: 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego
+projektu z minimum 50 asercjami
+
+:white_check_mark: 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z
+minimum jednym scenariuszem negatywnym per endpoint
+
+:x: 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+
+Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/06)
