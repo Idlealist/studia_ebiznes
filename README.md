@@ -129,5 +129,6 @@ w kodzie w Sonarze (kod aplikacji serwerowej)
 aplikacji klienckiej
 
 
-Kod: [server repo](https://github.com/Idlealist/studia_sonar_sever)
-Kod: [client repo](https://github.com/Idlealist/studia_sonar_client)
+Kod: 
+[server repo](https://github.com/Idlealist/studia_sonar_sever)
+[client repo](https://github.com/Idlealist/studia_sonar_client)
