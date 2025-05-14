@@ -110,3 +110,24 @@ minimum jednym scenariuszem negatywnym per endpoint
 
 
 Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/06)
+
+**Zadanie 7** Sonar
+
+:white_check_mark: 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w
+hookach gita
+
+:white_check_mark: 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+:white_check_mark: 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod
+aplikacji serwerowej)
+
+:white_check_mark: 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa
+w kodzie w Sonarze (kod aplikacji serwerowej)
+
+:white_check_mark: 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie
+aplikacji klienckiej
+
+
+Kod: [server repo](https://github.com/Idlealist/studia_sonar_sever)
+Kod: [client repo](https://github.com/Idlealist/studia_sonar_client)
