@@ -132,3 +132,17 @@ aplikacji klienckiej
 Kod: 
 [server repo](https://github.com/Idlealist/studia_sonar_sever)
 [client repo](https://github.com/Idlealist/studia_sonar_client)
+
+**Zadanie 8** Oauth2
+
+:white_check_mark: 3.0 logowanie przez aplikację serwerową (bez Oauth2)
+
+:white_check_mark: 3.5 rejestracja przez aplikację serwerową (bez Oauth2)
+
+:white_check_mark: 4.0 logowanie via Google OAuth2
+
+:white_check_mark: 4.5 logowanie via Facebook lub Github OAuth2
+
+:white_check_mark: 5.0 zapisywanie danych logowania OAuth2 po stronie serwera
+
+Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/08)
