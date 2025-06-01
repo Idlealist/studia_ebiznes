@@ -146,3 +146,22 @@ Kod:
 :white_check_mark: 5.0 zapisywanie danych logowania OAuth2 po stronie serwera
 
 Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/08)
+
+**Zadanie 9** Zadanie 9 ChatGPT bot
+
+:white_check_mark:  3.0 należy stworzyć po stronie serwerowej osobny serwis do łącznia z
+chatGPT do usługi chat
+
+:white_check_mark: 3.5 należy stworzyć interfejs frontowy dla użytkownika, który
+komunikuje się z serwisem; odpowiedzi powinny być wysyałen do
+frontendowego interfejsu
+
+
+:x: 4.0 stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy
+
+:x: 4.5 filtrowanie po zagadnieniach związanych ze sklepem (np.
+ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT
+
+:x: 5.0 filtrowanie odpowiedzi po sentymencie
+
+Kod: [link](https://github.com/Idlealist/studia_ebiznes/tree/main/09)
