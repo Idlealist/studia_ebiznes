@@ -29,7 +29,7 @@ jobs:
     - name: Build and push frontend
       working-directory: 10/frontend
       run: |
-        docker build -t $DOCKER_USER/ebiznes-cloud-frontend .
+        docker build --build-arg VITE_API_URL=${{ secrets.API_URL }} -t $DOCKER_USER/ebiznes-cloud-frontend .
         docker push $DOCKER_USER/ebiznes-cloud-frontend
 
     - name: Build and push backend
