@@ -1,0 +1,39 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '10/**'
+
+permissions:
+  contents: read
+
+env:
+  DOCKER_USER: ${{ secrets.DOCKER_USER }}
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Login to Docker
+      env:
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
+
+    - name: Build and push frontend
+      working-directory: 10/frontend
+      run: |
+        docker build -t $DOCKER_USER/ebiznes-cloud-frontend .
+        docker push $DOCKER_USER/ebiznes-cloud-frontend
+
+    - name: Build and push backend
+      working-directory: 10/backend
+      run: |
+        docker build -t $DOCKER_USER/ebiznes-cloud-backend .
+        docker push $DOCKER_USER/ebiznes-cloud-backend
